@@ -1,0 +1,11 @@
+[
+    {
+        "firstName":"James",
+        "lastName": "Blackman",
+        "year": "2",
+        "featured":false,
+        "homeHighSchool":"Ironwood",
+        "gitHub": "https://github.com/Jblack262",
+        "message":"Does Things"
+    }
+]
