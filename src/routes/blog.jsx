@@ -1,13 +1,15 @@
 import '../styles/css/main.css';
-import {openNav} from '../components/elements/navigation'
+import {openNav} from '../components/elements/slideNavBar'
 
 const Blog = ()=> {
 
 
     return(
         <div id='main' className='blog'>
-            <button className='openButton' onClick={openNav}>&#9776; Menu</button>
-            <h1>Blog Template</h1>
+            <div>
+                {/* <h1>Blog Template</h1> */}
+            </div>
+            
         </div>
     )
 }

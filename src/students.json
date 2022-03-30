@@ -7,5 +7,23 @@
         "homeHighSchool":"Ironwood",
         "gitHub": "https://github.com/Jblack262",
         "message":"Does Things"
+    },
+    {
+        "firstName":"Bat",
+        "lastName": "Man",
+        "year": "2",
+        "featured":false,
+        "homeHighSchool":"Batcave",
+        "gitHub": "https://github.com/Jblack262",
+        "message":"I am Justice"
+    },
+    {
+        "firstName":"Tyrion",
+        "lastName": "Lanister",
+        "year": "2",
+        "featured":false,
+        "homeHighSchool":"Castle Rock",
+        "gitHub": "https://github.com/Jblack262",
+        "message":"I drink wine and know things"
     }
 ]

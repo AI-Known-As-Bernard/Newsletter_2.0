@@ -1,11 +1,13 @@
-import {closeNav} from './navigation'
+import {closeNav,openNav} from './slidebarFunctions'
 import {Link} from 'react-router-dom'
+import '../../styles/css/main.css' ;
 
-const Navigation = ()=>{
+const slideNavBar = ()=>{
 
 
     return (
         <div>
+            <button className='openButton' onClick={openNav}>&#9776; Menu</button>
             <div id='mySidebar' className='sidebar'>
                 <a href="#!" className='closeButton' onClick={closeNav}>
                 X</a>
@@ -20,4 +22,4 @@ const Navigation = ()=>{
     )
 }
 
-export default Navigation;
+export default slideNavBar;

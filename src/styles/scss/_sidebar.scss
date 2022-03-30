@@ -1,3 +1,12 @@
+div.container,
+div.main,
+div#main,
+div#container {
+  transition: margin-left 0.5s;
+  position: fixed;
+  //The main div, container whatever it be be called must have above set
+}
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -38,8 +47,22 @@
   color: white;
   padding: 10px 15px;
   border: none;
+  top: 0;
+  left: 0;
+  // padding: 20px;
+  position: fixed;
+  z-index: 1;
 }
 
 .openButton:hover {
   background-color: #444;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }

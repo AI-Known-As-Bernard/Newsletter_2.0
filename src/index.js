@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './routes/home'
 import Blog from './routes/blog'
-import Navigation from './components/elements/Navigation.jsx'
+import SlideNavBar from './components/elements/slideNavBar.jsx'
 import connectDB from './components/elements/connectDB'
+// require('dotenv').config()
+
+// connectDB(process.env.MONGO_URI)
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Navigation/>
+    <SlideNavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='blog' element={<Blog/>}/>

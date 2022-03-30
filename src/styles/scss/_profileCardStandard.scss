@@ -1,0 +1,80 @@
+// @import 'variables';
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 20rem;
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(#fff, 0);
+}
+
+.rank {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  position: fixed;
+  padding: 5px;
+  top: 0;
+  left: 0.25rem;
+  border: 2px solid #f7931d;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.profileButton {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #f7931d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.socialLinks:hover,
+a:hover {
+  font-size: 110%;
+}
+
+.profileImg {
+  width: 100%;
+}
+.cardData {
+  width: 100%;
+}
+.socialLinks {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  width: 100%;
+  border: none;
+  outline: 0;
+  padding: 8px;
+  color: black;
+  background-color: #f7931d;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  i {
+    color: currentColor;
+  }
+}
