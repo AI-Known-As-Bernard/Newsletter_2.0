@@ -18,7 +18,6 @@ const profileCardWeb= () =>{
 
     return (
         <div className="card">
-            <IconContext.Provider value={{ className: 'react-icons' }}>
             <div className="ds-top"><h2 className="nameTop">{firstName} {lastName}</h2></div>
             
             <div className="avatar-holder">
@@ -34,6 +33,7 @@ const profileCardWeb= () =>{
                     <a href="#"><FaTwitterSquare/></a>
                     <a href="#"><FaInstagramSquare/></a>
                 </div>
+                </IconContext.Provider>
             </div>
             <div className="ds-info">
                 <div className="ds pens">
@@ -50,6 +50,7 @@ const profileCardWeb= () =>{
                 </div>
             </div>
             <div className="ds-skill">
+                <IconContext.Provider value={{ className: 'skillsIcon' }}>
                 <h6>Skills <i className="fa fa-code" aria-hidden="true"></i></h6>
                 <div className="skill html">
                     <h6><FaHtml5/> HTML5 </h6>
@@ -81,8 +82,9 @@ const profileCardWeb= () =>{
                         <p>75%</p>
                     </div>
                 </div>
+                </IconContext.Provider>
             </div>
-            </IconContext.Provider>
+           
         </div>
     )
 }
