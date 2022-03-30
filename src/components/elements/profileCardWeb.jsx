@@ -26,7 +26,7 @@ const profileCardWeb= () =>{
             <div className="name">
                 <h2>Year {year} </h2>
                 <h3>{homeHighSchool}</h3>
-                
+                <IconContext.Provider value={{ className: 'socialIcons' }}>
                 <div className="socialLinks">
                     <a href={gitHub}><FaLinkedin/></a>
                     <a href="#"><FaGithubSquare/></a>
