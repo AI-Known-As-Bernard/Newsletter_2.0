@@ -5,8 +5,13 @@ const Blog = ()=> {
 
 
     return(
-        <div>
-            <BlogPost/>
+        <div id='main'>
+            <div className='blogPostContainer'>
+                <BlogPost/>
+                <BlogPost/>
+                <BlogPost/>
+            </div>
+            
         </div>
         
     )
