@@ -4,6 +4,13 @@ $frostedBlur:1rem;
 $postContainerWidth:100vw;
 $postConstainerHeight:100vh;
 
+.pageTitle{
+  text-align:center;
+  font-size:72px;
+  font-weight: bold;
+  margin-top:2rem;
+}
+
 .blogPost{
   // position: absolute;
   margin: 0 auto;
@@ -14,7 +21,7 @@ $postConstainerHeight:100vh;
   background-attachment: fixed;
   border-radius:25px;
   display: flex;
-  margin-bottom:1rem;
+  margin:3rem 5rem 3rem 5rem;
 }
 .postContent{
   border-top: 2px solid white;
@@ -24,23 +31,16 @@ $postConstainerHeight:100vh;
   color:black;
   display: inherit;
   align-items: center; 
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .postTitle{
   top: 0;
   display: absolute;
 }
 .blogPostContainer:before{
-  content: "";
-  position:absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  box-shadow: inset 0 0 2000px rba(255,255,255,0.5);
-  filter:blur($frostedBlur);
-  background: inherit;
-  width: 100%;
+  background-color: transparent;
+  filter:blur(30px)
 }
 .blogPostContainer{
   background:inherit;

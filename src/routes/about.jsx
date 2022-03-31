@@ -1,14 +1,14 @@
 import '../styles/css/main.css';
-import Card from '../components/elements/profileCardWeb.jsx'
+
 // const loadingDOM = document.querySelector('.loading-text')
 
-const Home = ()=> {
+const About = ()=> {
     
-    return <div id='main' className='home'>
+    return <div id='main' className='about'>
         <div className='loadingText'></div>
-        <h1 className='pageTitle'>Coding Newsletter</h1>
+        <h1 className='pageTitle'>About Coding</h1>
         <div id='cardGalleryContainer'>
-            <Card/>
+            
         {/* {list.map((student, i)=> {
             <Card user={student}/>
         })} */}
@@ -17,4 +17,4 @@ const Home = ()=> {
     </div>
 }
 
-export default Home;
+export default About;
