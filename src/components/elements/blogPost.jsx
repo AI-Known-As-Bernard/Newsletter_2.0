@@ -47,11 +47,8 @@ const blogPost =()=>{
                 />
             </div>
             <div className='postContent'>
-                <p>
                     <h2 className='postTitle'><b>{month}: {blogTitle}</b></h2>
                     <p>{blogMessage}</p>
-                </p>
-                
             </div>
         </div>
     )

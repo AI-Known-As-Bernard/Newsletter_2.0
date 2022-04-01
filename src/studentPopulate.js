@@ -7,7 +7,7 @@ const studentList = require('./students.json')
 
 const start = async () => {
     try{
-        await connectDB(process.env.MONGO_URI)
+        await connectDB(process.env.REACT_APP_MONGO_URI)
         console.log('connected')
         await Student.deleteMany()
         await Student.create(studentList)

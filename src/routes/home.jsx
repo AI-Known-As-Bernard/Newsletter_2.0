@@ -1,6 +1,7 @@
 import '../styles/css/main.css';
 import Card from '../components/elements/profileCardWeb.jsx'
 // const loadingDOM = document.querySelector('.loading-text')
+// import studentList from '../components/elements/studentList'
 
 const Home = ()=> {
     

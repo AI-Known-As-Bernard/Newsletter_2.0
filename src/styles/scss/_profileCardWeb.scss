@@ -6,6 +6,11 @@ $titleSize: 3rem;
 $categorySize: 1rem;
 $avatar: 15rem;
 $progressBarSize: 1rem;
+$htmlBar: 95%;
+$cssBar: 90%;
+$jsBar: 75%;
+$reactBar: 90%;
+$nodeBar: 95%;
 
 * {
   margin: 0;
@@ -28,7 +33,7 @@ $progressBarSize: 1rem;
 .card {
   position: absolute;
   margin: auto;
-  top: 0;
+  top: 6rem;
   right: 0;
   bottom: 0;
   left: 0;
@@ -249,25 +254,35 @@ $progressBarSize: 1rem;
           font-size: 0.9rem;
           font-weight: 700;
           padding-top: 0.85rem;
-          animation: fadeIn 5s;
+          animation: fadeIn 4s;
         }
         &:hover {
           background: white;
         }
       }
       .bar-html {
-        width: 95%;
+        // width: $htmlBar;
         animation: htmlSkill 1s;
         animation-delay: 0.4s;
       }
       .bar-css {
-        width: 90%;
+        // width: $cssBar;
         animation: cssSkill 2s;
         animation-delay: 0.4s;
       }
       .bar-js {
-        width: 75%;
+        // width: $jsBar;
         animation: jsSkill 3s;
+        animation-delay: 0.4s;
+      }
+      .bar-react {
+        // width: $reactBar;
+        animation: reactSkill 2s;
+        animation-delay: 0.4s;
+      }
+      .bar-node {
+        // width: $nodeBar;
+        animation: nodeSkill 1s;
         animation-delay: 0.4s;
       }
     }
@@ -277,7 +292,7 @@ $progressBarSize: 1rem;
 @keyframes fadeInMove {
   0% {
     opacity: 0;
-    left: -300px;
+    left: -18.75rem;
   }
   100% {
     opacity: 1;
@@ -299,7 +314,7 @@ $progressBarSize: 1rem;
     width: 0;
   }
   100% {
-    width: 95%;
+    width: $htmlBar;
   }
 }
 
@@ -308,7 +323,7 @@ $progressBarSize: 1rem;
     width: 0;
   }
   100% {
-    width: 90%;
+    width: $cssBar;
   }
 }
 
@@ -317,7 +332,23 @@ $progressBarSize: 1rem;
     width: 0;
   }
   100% {
-    width: 75%;
+    width: $jsBar;
+  }
+}
+@keyframes reactSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: $reactBar;
+  }
+}
+@keyframes nodeSkill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: $nodeBar;
   }
 }
 
@@ -335,7 +366,7 @@ $progressBarSize: 1rem;
     top: -9.375rem;
   }
   100% {
-    top: 2.5rem;
+    top: 4.5rem;
   }
 }
 

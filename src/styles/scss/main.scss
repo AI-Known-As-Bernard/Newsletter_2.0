@@ -3,6 +3,7 @@
 @import 'profileCardWeb';
 @import 'react-image-gallery';
 @import 'blog';
+@import 'homePage';
 
 #main {
   background-image: url(../../components/images/retroBackground.jpg);
@@ -10,10 +11,10 @@
   width: 100%;
   height: 100vh;
 }
-image-gallery-image {
-  width: 5rem;
-  height: 5rem;
-}
+// image-gallery-image {
+//   width: 5rem;
+//   height: 5rem;
+// }
 
 html,
 body {

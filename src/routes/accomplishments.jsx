@@ -6,11 +6,9 @@ const Accomplishments = ()=> {
 
     return(
         <div id='main' className='accomplishments'>
-            <div className='blogPostContainer'>
-                <h1 className='pageTitle'>Coding Accomplishments</h1>
+          <h1 className='pageTitle'>Accomplishments</h1>
                
-            </div>
-            
+           
         </div>
         
     )

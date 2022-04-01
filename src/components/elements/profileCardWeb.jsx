@@ -11,10 +11,16 @@ const profileCardWeb= () =>{
      featured:true,
      homeHighSchool:'Starfleet',
      message:'How we deal with death is at least as important as how we deal with life.',
-     gitHub:'https://github.com/Jblack262'
+     gitHub:'https://github.com/Jblack262',
+     html:'95%',
+     css:'90%',
+     js:'75%',
+     react:'95%',
+     node:'90%'
     }
 
-    const {firstName,lastName,year,featured,homeHighSchool,gitHub,message}=user
+    const {firstName,lastName,year,featured,homeHighSchool,gitHub,message,html,css,js,node,react}=user
+    
 
     return (
         <div className="card">
@@ -48,37 +54,38 @@ const profileCardWeb= () =>{
                     <h6 title="Number of posts">Posts <i className="fas fa-comments"></i></h6>
                     <p>0</p>
                 </div>
+                {/* {message} */}
             </div>
             <div className="ds-skill">
                 <IconContext.Provider value={{ className: 'skillsIcon' }}>
                 <h6>Skills <i className="fa fa-code" aria-hidden="true"></i></h6>
                 <div className="skill html">
                     <h6><FaHtml5/> HTML5 </h6>
-                    <div className="bar bar-html">
+                    <div className="bar bar-html" style={{width:html}}>
                         <p>95%</p>
                     </div>
                 </div>
                 <div className="skill css">
                     <h6><FaCss3/> CSS3 </h6>
-                    <div className="bar bar-css">
+                    <div className="bar bar-css" style={{width:css}}>
                         <p>90%</p>
                     </div>
                 </div>
                 <div className="skill javascript">
                     <h6><SiJavascript/> JavaScript </h6>
-                    <div className="bar bar-js">
+                    <div className="bar bar-js" style={{width:js}}>
                         <p>75%</p>
                     </div>
                 </div>
                 <div className="skill react">
                     <h6><FaReact/> React </h6>
-                    <div className="bar bar-js">
+                    <div className="bar bar-react" style={{width:react}}>
                         <p>75%</p>
                     </div>
                 </div>
-                <div className="skill node">
+                <div className="skill node" style={{width:node}}>
                     <h6><FaNode/> Node </h6>
-                    <div className="bar bar-js">
+                    <div className="bar bar-node">
                         <p>75%</p>
                     </div>
                 </div>

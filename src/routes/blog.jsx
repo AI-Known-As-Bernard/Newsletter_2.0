@@ -7,7 +7,7 @@ const Blog = ()=> {
     return(
         <div id='main' className='blog'>
             <div className='blogPostContainer'>
-                <h1 className='pageTitle'>Coding Monthly Blog</h1>
+                <h1 className='pageTitle'>Blog</h1>
                 <BlogPost/>
                 <BlogPost/>
                 <BlogPost/>

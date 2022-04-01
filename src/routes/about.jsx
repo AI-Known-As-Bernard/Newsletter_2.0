@@ -6,7 +6,7 @@ const About = ()=> {
     
     return <div id='main' className='about'>
         <div className='loadingText'></div>
-        <h1 className='pageTitle'>About Coding</h1>
+        <h1 className='pageTitle'>About</h1>
         <div id='cardGalleryContainer'>
             
         {/* {list.map((student, i)=> {

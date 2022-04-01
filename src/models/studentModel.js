@@ -11,10 +11,10 @@ const studentSchema = new mongoose.Schema({
     required: [true, 'Last Name Required'],
   },
   year: {
-    type: Number,
+    type: String,
     required: [true, 'Students Current Year Required'],
     enum: {
-      values: [1, 2],
+      values: ["1", "2"],
       message: '{VALUE} is not supported',
     },
   },
@@ -40,7 +40,38 @@ const studentSchema = new mongoose.Schema({
     //   values: ['ikea', 'liddy', 'caressa', 'marcos'],
     //   message: '{VALUE} is not supported',
     // },
+  },htmlSkill: {
+    type: String,
+    required: [true, 'Number representing skill level as PERCENTAGE'],
   },
+  cssSkill: {
+    type: String,
+    required: [true, 'Number representing skill level as PERCENTAGE'],
+  },
+  jsSkill: {
+    type: String,
+    required: [true, 'Number representing skill level as PERCENTAGE'],
+  },
+  reactSkill: {
+    type: String,
+    required: [true, 'Number representing skill level as PERCENTAGE'],
+  },
+  nodeSkill: {
+    type: String,
+    required: [true, 'Number representing skill level as PERCENTAGE'],
+  },
+  portfolio:{
+    type:String,
+  },
+  linkedIn:{
+    type:String,
+  },
+  instagram:{
+    type:String,
+  },
+  twitter:{
+    type:String,
+  }
 })
 
 module.exports = mongoose.model('student', studentSchema)

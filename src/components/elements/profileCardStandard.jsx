@@ -1,5 +1,5 @@
 import studentImg from '../images/JDBlackman.jpg';
-import dbList from './dbList'
+import dbList from './studentList'
 // import Student from '../../models/studentModel.js'
 
 

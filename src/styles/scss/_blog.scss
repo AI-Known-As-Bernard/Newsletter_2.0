@@ -1,54 +1,63 @@
-$postWidth:50rem;
+$postWidth: 50rem;
 $postHeight: 50rem;
-$frostedBlur:1rem;
-$postContainerWidth:100vw;
-$postConstainerHeight:100vh;
+$frostedBlur: 1rem;
+$postContainerWidth: 100vw;
+$postConstainerHeight: 100vh;
 
-.pageTitle{
-  text-align:center;
-  font-size:72px;
+.pageTitle {
+  text-align: center;
+  font-size: 72px;
   font-weight: bold;
-  margin-top:2rem;
+  margin-top: 1rem;
+  color: white;
+  border: 2px solid white;
+  width: 50rem;
+  position: relative;
+  left: calc(50% - 25rem);
+  border-radius: 25px;
 }
 
-.blogPost{
+.blogPost {
   // position: absolute;
   margin: 0 auto;
-  width:postWidth;
-  height:postHeight;
-  left:50rem;
+  width: postWidth;
+  height: postHeight;
+  left: 50rem;
   border: 2px solid white;
   background-attachment: fixed;
-  border-radius:25px;
+  border-radius: 25px;
   display: flex;
-  margin:3rem 5rem 3rem 5rem;
+  margin: 3rem 5rem 3rem 5rem;
 }
-.postContent{
+.postContent {
   border-top: 2px solid white;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
   padding: 0.5rem;
   font-size: 1.5rem;
-  background-color:#f7931d;
-  color:black;
+  background-color: #f7931d;
+  color: black;
   display: inherit;
-  align-items: center; 
+  align-items: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-.postTitle{
+.postTitle {
   top: 0;
   display: absolute;
+  text-align: center;
 }
-.blogPostContainer:before{
+.blogPostContainer:before {
   background-color: transparent;
-  filter:blur(30px)
+  filter: blur(30px);
 }
-.blogPostContainer{
-  background:inherit;
-  position:relative;
+.blogPostContainer {
+  background: inherit;
+  position: relative;
   z-index: 1;
-  overflow:scroll;
+  overflow: scroll;
   width: $postContainerWidth;
   height: $postConstainerHeight;
   // left:12rem;
 }
-

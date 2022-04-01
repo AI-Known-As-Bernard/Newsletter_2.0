@@ -6,7 +6,7 @@ const connectDB = (uri) => {
     // useCreateIndex: true,
     // useFindAndModify: false,
     useUnifiedTopology: true,
-  })
+  }).then(()=>{console.log('CONNECTED TO MONGODB SUCCESSFUL')})
 }
 
 module.exports = connectDB
