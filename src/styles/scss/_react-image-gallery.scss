@@ -1,5 +1,5 @@
-$ig-small-screen: 768px !default;
-$ig-xsmall-screen: 480px !default;
+$ig-small-screen: 48rem !default;
+$ig-xsmall-screen: 30rem !default;
 $ig-white: #fff !default;
 $ig-black: #000 !default;
 $ig-blue: #337ab7 !default;
@@ -55,28 +55,28 @@ $galleryHeight:35rem;
 .image-gallery-fullscreen-button,
 .image-gallery-play-button {
   bottom: 0;
-  padding: 20px;
+  padding: 1.25rem;
 
   .image-gallery-svg {
-    height: 28px;
-    width: 28px;
+    height: 1.75rem;
+    width: 1.75rem;
   }
 
   @media (max-width: $ig-small-screen) {
-    padding: 15px;
+    padding: 0.938rem;
 
     .image-gallery-svg {
-      height: 24px;
-      width: 24px;
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 
   @media (max-width: $ig-xsmall-screen) {
-    padding: 10px;
+    padding: 0.625rem;
 
     .image-gallery-svg {
-      height: 16px;
-      width: 16px;
+      height: 1rem;
+      width: 1rem;
     }
   }
 }
@@ -91,26 +91,26 @@ $galleryHeight:35rem;
 
 .image-gallery-left-nav,
 .image-gallery-right-nav {
-  padding: 50px 10px;
+  padding: 50px 0.625rem;
   top: 50%;
   transform: translateY(-50%);
 
   .image-gallery-svg {
-    height: 120px;
-    width: 60px;
+    height: 7.5rem;
+    width: 3.75rem;
   }
 
   @media (max-width: $ig-small-screen) {
     .image-gallery-svg {
-      height: 72px;
-      width: 36px;
+      height: 4.5rem;
+      width: 2.5rem;
     }
   }
 
   @media (max-width: $ig-xsmall-screen) {
     .image-gallery-svg {
-      height: 48px;
-      width: 24px;
+      height: 3rem;
+      width: 1.5rem;
     }
   }
 
@@ -164,20 +164,22 @@ $galleryHeight:35rem;
 
   .image-gallery-slide .image-gallery-image {
     // max-height: calc(100vh - 80px); // 80 px for the thumbnail space
-    width:$galleryWidth;
-    height:$galleryHeight;
+    // max-width:$galleryWidth;
+    // min-width:$galleryWidth;
+    max-height:$galleryHeight;
+    position: relative;
   }
-  .image-gallery-image{
-    width:$galleryWidth;
-    height:$galleryHeight;
+  // .image-gallery-image{
+  //   width:$galleryWidth;
+  //   height:$galleryHeight;
     object-fit: cover;
-  }
+  // }
   &.left,
   &.right {
     .image-gallery-slide .image-gallery-image {
-      // max-height: 100vh;
-      width:25rem;
-      height:15rem;
+      max-height: 100vh;
+      // width:25rem;
+      // height:15rem;
     }
   }
 }
@@ -188,10 +190,10 @@ $galleryHeight:35rem;
   &.left,
   &.right {
     display: inline-block;
-    width: calc(100% - 6.875rem); // 100px + 10px for margin
+    width: calc(100% - 6.875rem); // 6.25rem + 0.625rem for margin
 
     @media (max-width: $ig-small-screen) {
-      width: calc(100% - 87px); // 81px + 6px for margin
+      width: calc(100% - 87px); // 5.063rem + 6px for margin
     }
   }
   &.image-gallery-rtl {
@@ -220,29 +222,30 @@ $galleryHeight:35rem;
   .image-gallery-image {
     width: 100%;
     object-fit: contain;
+   
   }
 
   .image-gallery-description {
     background: $ig-background-black;
-    bottom: 70px;
+    bottom: 4.375rem;
     color: $ig-white;
     left: 0;
     line-height: 1;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     position: absolute;
     white-space: normal;
 
     @media (max-width: $ig-small-screen) {
-      bottom: 45px;
+      bottom: 2.813rem;
       font-size: .8em;
-      padding: 8px 15px;
+      padding: 0.5rem 0.938rem;
     }
 
   }
 }
 
 .image-gallery-bullets {
-  bottom: 20px;
+  bottom: 1.25rem;
   left: 0;
   margin: 0 auto;
   position: absolute;
@@ -264,36 +267,36 @@ $galleryHeight:35rem;
     box-shadow: $ig-shadow;
     cursor: pointer;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0.313rem;
     outline: none;
-    padding: 5px;
+    padding: 0.313rem;
     transition: all .2s ease-out;
 
     @media (max-width: $ig-small-screen) {
-      margin: 0 3px;
-      padding: 3px;
+      margin: 0 0.188rem;
+      padding: 0.188rem;
     }
 
     @media (max-width: $ig-xsmall-screen) {
-      padding: 2.7px;
+      padding: 0.188rem;
     }
 
     &:focus {
       transform: scale(1.2);
       background: $ig-blue;
-      border: 1px solid $ig-blue;
+      border: 0.063rem solid $ig-blue;
     }
 
     &.active {
       transform: scale(1.2);
-      border: 1px solid $ig-white;
+      border: 0.063rem solid $ig-white;
       background: $ig-white;
     }
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
         background: $ig-blue;
-        border: 1px solid $ig-blue;
+        border: 0.063rem solid $ig-blue;
       }
 
       &.active:hover {
@@ -321,10 +324,10 @@ $galleryHeight:35rem;
   &.right {
     display: inline-block;
     vertical-align: top;
-    width: 100px;
+    width: 6.25rem;
 
     @media (max-width: $ig-small-screen) {
-      width: 81px; // 75px + 6px for border
+      width: 5.063rem; // 75px + 6px for border
     }
 
     .image-gallery-thumbnails {
@@ -380,13 +383,13 @@ $galleryHeight:35rem;
   display: inline-block;
   border: 4px solid transparent;
   transition: border .3s ease-out;
-  width: 100px;
+  width: 6.25rem;
   background: transparent;
   padding: 0;
 
   @media (max-width: $ig-small-screen) {
     border: 3px solid transparent;
-    width: 81px;
+    width: 5.063rem;
   }
 
   + .image-gallery-thumbnail {
@@ -451,7 +454,7 @@ $galleryHeight:35rem;
   background: $ig-background-black;
   color: $ig-white;
   line-height: 1;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   position: absolute;
   right: 0rem;
   top: 0;
@@ -459,6 +462,6 @@ $galleryHeight:35rem;
 
   @media(max-width: $ig-small-screen) {
     font-size: .8em;
-    padding: 5px 10px;
+    padding: 5px 0.625rem;
   }
 }

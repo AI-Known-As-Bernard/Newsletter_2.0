@@ -4,6 +4,7 @@ $frostedBlur: 1rem;
 $postContainerWidth: 100vw;
 $postConstainerHeight: 100vh;
 
+
 .pageTitle {
   text-align: center;
   font-size: 72px;
@@ -23,7 +24,7 @@ $postConstainerHeight: 100vh;
   width: postWidth;
   height: postHeight;
   left: 50rem;
-  border: 2px solid white;
+  // border: 2px solid white;
   background-attachment: fixed;
   border-radius: 25px;
   display: flex;
@@ -31,17 +32,34 @@ $postConstainerHeight: 100vh;
 }
 .postContent {
   border-top: 2px solid white;
+  position: relative;
+  width: 50rem;
   display: inherit;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   padding: 0.5rem;
   font-size: 1.5rem;
   background-color: #f7931d;
   color: black;
   display: inherit;
   align-items: center;
+  border: 2px solid white;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.image-gallery-slide .image-gallery-image {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.postGallery{
+ position:relative;
+ width: 30vw;
+ height:35rem;
+ overflow:hidden;
+ border: 2px solid white;
+ border-top-left-radius: 25px;
+ border-bottom-left-radius: 25px;
 }
 .postTitle {
   top: 0;
