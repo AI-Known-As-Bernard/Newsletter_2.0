@@ -7,7 +7,7 @@ const slideNavBar = ()=>{
 
     return (
         <div>
-            <button className='openButton' onClick={openNav}>&#9776; Menu</button>
+            <button className='openButton' onClick={openNav}>&#9776;</button>
             <div id='mySidebar' className='sidebar'>
                 <a href="#!" className='closeButton' onClick={closeNav}>
                 X</a>

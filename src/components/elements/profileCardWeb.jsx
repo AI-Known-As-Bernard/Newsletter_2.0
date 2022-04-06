@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 const profileCardWeb= () =>{
     const user={
      firstName: 'James' ,
-     lastName: 'Tibereous Kirk',
+     lastName: ' Kirk',
      year:2,
      featured:true,
      homeHighSchool:'Starfleet',
@@ -41,21 +41,7 @@ const profileCardWeb= () =>{
                 </div>
                 </IconContext.Provider>
             </div>
-            <div className="ds-info">
-                <div className="ds pens">
-                    <h6 title="Number of pens created by the user">Github Pushes<i className="fas fa-edit"></i></h6>
-                    <p>29</p>
-                </div>
-                <div className="ds projects">
-                    <h6 title="Number of projects created by the user">Projects <i className="fas fa-project-diagram"></i></h6>
-                    <p>0</p>
-                </div>
-                <div className="ds posts">
-                    <h6 title="Number of posts">Posts <i className="fas fa-comments"></i></h6>
-                    <p>0</p>
-                </div>
-                {/* {message} */}
-            </div>
+        
             <div className="ds-skill">
                 <IconContext.Provider value={{ className: 'skillsIcon' }}>
                 <h6>Skills <i className="fa fa-code" aria-hidden="true"></i></h6>

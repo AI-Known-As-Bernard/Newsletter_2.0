@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Krub:400,700');
 
-$cardWidth: 32rem;
-$cardHeight: 50rem;
+$cardWidth: 24rem;
+$cardHeight: 38rem;
 $titleSize: 3rem;
 $categorySize: 1rem;
-$avatar: 15rem;
-$progressBarSize: 1rem;
+$avatar: 12rem;
+$progressBarSize: 0.7rem;
 $htmlBar: 95%;
 $cssBar: 90%;
 $jsBar: 75%;
@@ -64,7 +64,8 @@ $nodeBar: 95%;
     height: $avatar;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000,
-      inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000;
+      inset 0 0 0 5px #000000, inset 0 0 0 5px #000000,
+      inset 0 0 0 5px #000000;
     background: white;
     overflow: hidden;
     animation: mvTop 1.5s;
@@ -100,7 +101,7 @@ $nodeBar: 95%;
       color: white;
       text-decoration: none;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.5rem;
       // &:hover {
       //   // text-decoration: underline;
       //   color: #f7931d;
@@ -108,11 +109,11 @@ $nodeBar: 95%;
     }
     h2 {
       float: left;
-      padding-left: 1rem;
+      padding-left: 0.25rem;
     }
     h3 {
       float: right;
-      padding-right: 1rem;
+      padding-right: 0.25rem;
     }
     h6 {
       position: absolute;
@@ -220,6 +221,7 @@ $nodeBar: 95%;
   .ds-skill {
     position: absolute;
     margin: auto;
+    top: 18.5rem;
     bottom: 0.625rem;
     right: 0;
     left: 0;

@@ -17,7 +17,7 @@ const Blog = ()=> {
             </div>
             
         </div>
-        
+       
     )
 }
 
