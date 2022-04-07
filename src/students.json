@@ -1,5 +1,6 @@
 [
     {
+      "id":0,
       "firstName": "Hanad",
       "lastName": "Shippy",
       "year": "2",
@@ -10,8 +11,8 @@
         "gitHub": "https://github.com/Hshipp267",
         "linkedIn": "https://www.linkedin.com/in/hanad-shippy-a48056229/",
         "portfolio": "https://vigorous-jepsen-66e3a9.netlify.app/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "85",
@@ -30,10 +31,10 @@
       "homeHighSchool": "Ironwood",
       "socialMediaHandles": {
         "gitHub": "https://github.com/Jblack262",
-        "linkedIn": "",
+        "linkedIn": "#",
         "portfolio": "https://www.jdblackman.com/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "90",
@@ -44,6 +45,7 @@
       }
     },
     {
+      "id":1,
       "firstName": "Andrew",
       "lastName": "Makris",
       "year": "2",
@@ -52,10 +54,10 @@
       "homeHighSchool": "Graduated",
       "socialMediaHandles": {
         "gitHub": "https://github.com/Amakris12",
-        "linkedIn": "",
+        "linkedIn": "#",
         "portfolio": "https://eloquent-babbage-15108c.netlify.app/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "90",
@@ -66,6 +68,7 @@
       }
     },
     {
+      "id":2,
       "firstName": "Luca",
       "lastName": "Graves",
       "year": "2",
@@ -76,8 +79,8 @@
         "gitHub": "https://github.com/lgrave264",
         "linkedIn": "https://www.linkedin.com/in/luca-graves-044a0b228/",
         "portfolio": "https://naughty-swartz-a5fe53.netlify.app/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "90",
@@ -88,6 +91,7 @@
       }
     },
     {
+      "id":3,
       "firstName": "Maverick",
       "lastName": "Oleson",
       "year": "2",
@@ -96,10 +100,10 @@
       "homeHighSchool": "Oleson Academy",
       "socialMediaHandles": {
         "gitHub": "https://github.com/Moleso587587",
-        "linkedIn": "",
+        "linkedIn": "#",
         "portfolio": "http://maverickoleson.com/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "90",
@@ -110,6 +114,7 @@
       }
     },
     {
+      "id":4,
       "firstName": "Barik",
       "lastName": "Boley",
       "year": "2",
@@ -132,6 +137,7 @@
       }
     },
     {
+      "id":5,
       "firstName": "Dylan",
       "lastName": "Drebes",
       "year": "1",
@@ -140,10 +146,10 @@
       "homeHighSchool": "Mountain Ridge",
       "socialMediaHandles": {
         "gitHub": "https://github.com/ddrebe473",
-        "linkedIn": "",
-        "portfolio": "",
-        "instagram": "",
-        "twitter": ""
+        "linkedIn": "#",
+        "portfolio": "#",
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "70",
@@ -154,6 +160,7 @@
       }
     },
     {
+      "id":6,
       "firstName": "Emanuel",
       "lastName": "Jaghrati",
       "year": "1",
@@ -162,10 +169,10 @@
       "homeHighSchool": "Mountain Ridge",
       "socialMediaHandles": {
         "gitHub": "https://github.com/demonlord6661",
-        "linkedIn": "",
+        "linkedIn": "#",
         "portfolio": "https://demonlord6661.github.io/Bootstrap-port/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "82",
@@ -176,6 +183,7 @@
       }
     },
     {
+      "id":7,
       "firstName": "Ethan",
       "lastName": "Roldan",
       "year": "2",
@@ -187,7 +195,7 @@
         "linkedIn": "https://www.linkedin.com/in/ethan-roldan-29a9b420a/",
         "portfolio": "https://ethanroldanportfolio.netlify.app/",
         "instagram": "https://www.instagram.com/__.eef.__/",
-        "twitter": ""
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "80",
@@ -198,6 +206,7 @@
       }
     },
     {
+      "id":8,
       "firstName": "Justin",
       "lastName": "Melore",
       "year": "1",
@@ -208,8 +217,8 @@
         "gitHub": "https://github.com/JustinMelore",
         "linkedIn": "https://www.linkedin.com/in/justin-melore-7ba657236/",
         "portfolio": "https://justinmelore.github.io/Portfolio-2.0/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "85",
@@ -220,6 +229,7 @@
       }
     },
     {
+      "id":9,
       "firstName": "Roger",
       "lastName": "Grange",
       "year": "1",
@@ -230,8 +240,8 @@
         "gitHub": "https://github.com/JustinMelore",
         "linkedIn": "https://www.linkedin.com/in/roger-grange-972657236/",
         "portfolio": "https://rogerrandomdev.github.io/portfolio_3/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "75",
@@ -242,6 +252,7 @@
       }
     },
     {
+      "id":10,
       "firstName": "Victor",
       "lastName": "Malhorta",
       "year": "1",
@@ -252,8 +263,8 @@
         "gitHub": "https://github.com/Victor-Malhotra",
         "linkedIn": "https://www.linkedin.com/in/victor-malhotra-698309227/",
         "portfolio": "https://victor-malhotra.github.io/OnePagePortfolio/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "75",
@@ -264,6 +275,7 @@
       }
     },
     {
+      "id":11,
       "firstName": "Thomas",
       "lastName": "Anderson",
       "year": "1",
@@ -274,8 +286,8 @@
         "gitHub": "https://github.com/Tj5150",
         "linkedIn": "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
         "portfolio": "https://tj5150.github.io/Portfolio/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "65",
@@ -286,6 +298,7 @@
       }
     },
     {
+      "id":12,
       "firstName": "Logan",
       "lastName": "Rubenstein",
       "year": "1",
@@ -295,9 +308,9 @@
       "socialMediaHandles": {
         "gitHub": "https://github.com/demonlord6661",
         "linkedIn": "https://www.linkedin.com/in/l-r-9b0657236/",
-        "portfolio": "",
-        "instagram": "",
-        "twitter": ""
+        "portfolio": "#",
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "60",
@@ -308,6 +321,7 @@
       }
     },
     {
+      "id":13,
       "firstName": "Louis",
       "lastName": "Win",
       "year": "1",
@@ -318,8 +332,8 @@
         "gitHub": "https://github.com/lwin496",
         "linkedIn": "https://www.linkedin.com/in/louis-win-235b221b8/",
         "portfolio": "https://lwin496.github.io/Portfolio-/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "70",
@@ -330,6 +344,7 @@
       }
     },
     {
+      "id":14,
       "firstName": "Gianna",
       "lastName": "Marotta",
       "year": "1",
@@ -340,8 +355,8 @@
         "gitHub": "https://github.com/giannamar4",
         "linkedIn": "https://www.instagram.com/giannamarottaa/?hl=en",
         "portfolio": "https://captren501.github.io/Portfolio-project/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "80",
@@ -352,6 +367,7 @@
       }
     },
     {
+      "id":15,
       "firstName": "Ethan",
       "lastName": "Langford",
       "year": "1",
@@ -362,8 +378,8 @@
         "gitHub": "https://github.com/captren501?tab=overview&from=2022-02-01&to=2022-02-28",
         "linkedIn": "https://www.linkedin.com/feed/?trk=onboarding-landing",
         "portfolio": "https://captren501.github.io/Portfolio-project/",
-        "instagram": "",
-        "twitter": ""
+        "instagram": "#",
+        "twitter": "#"
       },
       "currentSkills": {
         "htmlSkill": "65",

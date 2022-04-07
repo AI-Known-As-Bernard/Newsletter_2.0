@@ -3,27 +3,28 @@ import {FaGithubSquare,FaTwitterSquare,FaLinkedin,FaInstagramSquare,FaReact,FaCs
 import {SiJavascript} from 'react-icons/si'
 import { IconContext } from "react-icons";
 
-const profileCardWeb= () =>{
-    const user={
-     firstName: 'James' ,
-     lastName: ' Kirk',
-     year:2,
-     featured:true,
-     homeHighSchool:'Starfleet',
-     message:'How we deal with death is at least as important as how we deal with life.',
-     gitHub:'https://github.com/Jblack262',
-     html:'95%',
-     css:'90%',
-     js:'75%',
-     react:'95%',
-     node:'90%'
-    }
 
-    const {firstName,lastName,year,featured,homeHighSchool,gitHub,message,html,css,js,node,react}=user
-    
+const profileCardWeb= (user) =>{
+    // const user={
+    //  firstName: 'James' ,
+    //  lastName: ' Kirk',
+    //  year:2,
+    //  featured:true,
+    //  homeHighSchool:'Starfleet',
+    //  message:'How we deal with death is at least as important as how we deal with life.',
+    //  gitHub:'https://github.com/Jblack262',
+    //  html:'95%',
+    //  css:'90%',
+    //  js:'75%',
+    //  react:'95%',
+    //  node:'90%'
+    // }
 
+    const {firstName,id,lastName,year,featured,homeHighSchool,message,html,css,js,node,react,socialMediaHandles,currentProgress}=user.user
+
+    // console.log(user)
     return (
-        <div className="card">
+        <div className="card" id={id} >
             <div className="ds-top"><h2 className="nameTop">{firstName} {lastName}</h2></div>
             
             <div className="avatar-holder">
@@ -34,10 +35,10 @@ const profileCardWeb= () =>{
                 <h3>{homeHighSchool}</h3>
                 <IconContext.Provider value={{ className: 'socialIcons' }}>
                 <div className="socialLinks">
-                    <a href={gitHub}><FaLinkedin/></a>
-                    <a href="#"><FaGithubSquare/></a>
-                    <a href="#"><FaTwitterSquare/></a>
-                    <a href="#"><FaInstagramSquare/></a>
+                    <a href={socialMediaHandles.gitHub}><FaLinkedin/></a>
+                    <a href={socialMediaHandles.linkedIn}><FaGithubSquare/></a>
+                    <a href={socialMediaHandles.twitter}><FaTwitterSquare/></a>
+                    <a href={socialMediaHandles.instagram}><FaInstagramSquare/></a>
                 </div>
                 </IconContext.Provider>
             </div>
