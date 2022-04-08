@@ -1,5 +1,75 @@
+
 .cardGalleryContainer {
   width: 80%;
   height: 100%;
   //   object-fit: contain;
 }
+.next{
+  position: absolute;
+  top: 50%;
+  right:13.5%;
+  background-color: #f7931d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.previous{
+  position: absolute;
+  top: 50%;
+  left:10%;
+  background-color:#f7931d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+  .pageTitle{
+    font-size:1.7rem;
+    position: absolute;
+    width:70%;
+    text-align: center;
+    left: 30%;
+    top: 0;
+    z-index: 45;
+
+  }
+  .next{
+    position: absolute;
+    display: flex;
+    right: 0.5rem;
+    background-color: black;
+    top: 10rem;
+    z-index: 45;
+    width:5%;
+    height: 5%;
+    padding: 15px 32px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .previous{
+    position: absolute;
+    display: flex;
+    left: 0.5rem;
+    background-color: black;
+    top: 10rem;
+    z-index: 45;
+    width:5%;
+    height: 5%;
+    padding: 15px 32px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;}
+  }
+

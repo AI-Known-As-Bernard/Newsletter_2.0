@@ -18,12 +18,20 @@ const Home = ()=> {
         setStudent(list[x])
         console.log('next' + x)
     };
+    const previous = () => {
+        if(x==0){x=list.length-1}
+        else{x--}
+        
+        setStudent(list[x])
+        console.log('next' + x)
+    };
     console.log(list)
     return <div id='main' className='home'>
         <div className='loadingText'></div>
         <h1 className='pageTitle'>Coding Newsletter</h1>
         <div id='cardGalleryContainer'>
             <button className='next' onClick={()=>next()}>Next</button>
+            <button className='previous' onClick={()=>previous()}>Previous</button>
             <Suspense fallback={renderLoader()}>
                 <Card user={student} key={x}/>
             </Suspense>

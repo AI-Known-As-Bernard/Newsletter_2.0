@@ -2,7 +2,7 @@
 
 $cardWidth: 24rem;
 $cardHeight: 38rem;
-$titleSize: 3rem;
+$titleSize:2.5rem;
 $categorySize: 1rem;
 $avatar: 12rem;
 $progressBarSize: 0.7rem;
@@ -57,9 +57,9 @@ $nodeBar: 95%;
   .avatar-holder {
     position: absolute;
     margin: auto;
-    top: 4.5rem;
+    top: 4rem;
     right: 0;
-    left: 0;
+    left: -.5rem;
     width: $avatar;
     height: $avatar;
     border-radius: 50%;
@@ -82,6 +82,7 @@ $nodeBar: 95%;
     text-align: center;
     translate: 0 3rem;
     width: $cardWidth;
+    word-break: keep-all;
   }
   .name {
     position: absolute;
@@ -106,13 +107,19 @@ $nodeBar: 95%;
       //   color: #f7931d;
       // }
     }
-    h2 {
+    .year {
       float: left;
       padding-left: 0.25rem;
+      font-size: 1.5rem;
     }
-    h3 {
+    .school {
       float: right;
-      padding-right: 0.25rem;
+      padding-right: 0.7rem;
+      width: 29%;
+      word-wrap: break-word;
+      font-size: 1.2rem;
+      margin-bottom: .5rem;
+      
     }
     h6 {
       position: absolute;

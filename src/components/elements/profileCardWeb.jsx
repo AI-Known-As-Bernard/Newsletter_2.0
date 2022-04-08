@@ -22,7 +22,9 @@ const profileCardWeb= (user) =>{
 
     const {firstName,id,lastName,year,featured,homeHighSchool,message,html,css,js,node,react,socialMediaHandles,currentSkills}=user.user
 
-
+    const skillRenderCheck = (currentSkills) =>{
+        
+    }
     
     console.log(socialMediaHandles.gitHub)
     return (
@@ -33,8 +35,8 @@ const profileCardWeb= (user) =>{
                 <img src={studentImg} alt="J Di"/>
             </div>
             <div className="name">
-                <h2>Year {year} </h2>
-                <h3>{homeHighSchool}</h3>
+                <h4 className="year">Year {year} </h4>
+                <div className="school"><h4>{homeHighSchool}</h4></div>
                 <IconContext.Provider value={{ className: 'socialIcons' }}>
                 <div className="socialLinks">
                     <a href={socialMediaHandles.gitHub}><FaLinkedin/></a>
