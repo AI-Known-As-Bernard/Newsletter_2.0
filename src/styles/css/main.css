@@ -1089,6 +1089,10 @@ div#container {
     z-index: 45;
   }
 
+  .postGallery {
+    top: 3rem;
+  }
+
   .next {
     position: absolute;
     display: -webkit-box;
