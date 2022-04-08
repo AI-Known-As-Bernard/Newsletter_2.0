@@ -1,27 +1,33 @@
 import '../styles/css/main.css';
-import Card from '../components/elements/profileCardWeb.jsx'
-// const loadingDOM = document.querySelector('.loading-text')
-// import studentList from '../components/elements/studentList'
+import React, {useState,lazy,Suspense} from 'react'
 import list from '../students.json'
 import { next } from '../components/elements/slidebarFunctions';
 
+// const loadingDOM = document.querySelector('.loading-text')
+// import studentList from '../components/elements/studentList'
+const Card = lazy(()=> import('../components/elements/profileCardWeb.jsx'));
+let x = 0
 const Home = ()=> {
-    let x = 0;
+  
+    const [student, setStudent]= useState(list[x]);
+    const renderLoader = () => <p>Loading</p>;
     const next = () => {
-        document.getElementById(0).style.display = 'none';
-        x++;
-        console.log('next')
+        if(x==list.length-1){x=0}
+        else{x++}
+        
+        setStudent(list[x])
+        console.log('next' + x)
     };
     console.log(list)
     return <div id='main' className='home'>
         <div className='loadingText'></div>
         <h1 className='pageTitle'>Coding Newsletter</h1>
         <div id='cardGalleryContainer'>
-            {/* <Card/> */}
             <button className='next' onClick={()=>next()}>Next</button>
-        {list.map((student, i)=> {
-           return <Card user={student} key={i}/>
-        })}
+            <Suspense fallback={renderLoader()}>
+                <Card user={student} key={x}/>
+            </Suspense>
+            
         </div>
     
     </div>

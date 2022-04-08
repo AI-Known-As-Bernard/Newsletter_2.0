@@ -64,8 +64,7 @@ $nodeBar: 95%;
     height: $avatar;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000,
-      inset 0 0 0 5px #000000, inset 0 0 0 5px #000000,
-      inset 0 0 0 5px #000000;
+      inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000;
     background: white;
     overflow: hidden;
     animation: mvTop 1.5s;
@@ -248,6 +247,7 @@ $nodeBar: 95%;
       }
       .bar {
         height: $progressBarSize;
+        padding-bottom: 0.2rem;
         border-radius: 20px;
         background: #f7931d;
         text-align: right;
@@ -265,27 +265,27 @@ $nodeBar: 95%;
       .bar-html {
         // width: $htmlBar;
         animation: htmlSkill 1s;
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
       }
       .bar-css {
         // width: $cssBar;
         animation: cssSkill 2s;
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
       }
       .bar-js {
         // width: $jsBar;
         animation: jsSkill 3s;
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
       }
       .bar-react {
         // width: $reactBar;
         animation: reactSkill 2s;
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
       }
       .bar-node {
         // width: $nodeBar;
         animation: nodeSkill 1s;
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
       }
     }
   }
@@ -315,43 +315,44 @@ $nodeBar: 95%;
   0% {
     width: 0;
   }
-  100% {
-    width: $htmlBar;
-  }
+  // 100% {
+  //   width: 0;
+  // }
+  //currently Handled in the card.jsx
 }
 
 @keyframes cssSkill {
   0% {
     width: 0;
   }
-  100% {
-    width: $cssBar;
-  }
+  // 100% {
+  //   width: $cssBar;
+  // }
 }
 
 @keyframes jsSkill {
   0% {
     width: 0;
   }
-  100% {
-    width: $jsBar;
-  }
+  // 100% {
+  //   width: $jsBar;
+  // }
 }
 @keyframes reactSkill {
   0% {
     width: 0;
   }
-  100% {
-    width: $reactBar;
-  }
+  // 100% {
+  //   width: $reactBar;
+  // }
 }
 @keyframes nodeSkill {
   0% {
     width: 0;
   }
-  100% {
-    width: $nodeBar;
-  }
+  // 100% {
+  //   width: $nodeBar;
+  // }
 }
 
 @keyframes mvBottom {

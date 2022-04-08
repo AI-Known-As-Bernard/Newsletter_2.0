@@ -1,4 +1,4 @@
-import studentImg from '../images/JDBlackman.jpg';
+import studentImg from '../images/JDBlackman.webp';
 import {FaGithubSquare,FaTwitterSquare,FaLinkedin,FaInstagramSquare,FaReact,FaCss3,FaNode,FaHtml5} from 'react-icons/fa';
 import {SiJavascript} from 'react-icons/si'
 import { IconContext } from "react-icons";
@@ -20,9 +20,11 @@ const profileCardWeb= (user) =>{
     //  node:'90%'
     // }
 
-    const {firstName,id,lastName,year,featured,homeHighSchool,message,html,css,js,node,react,socialMediaHandles,currentProgress}=user.user
+    const {firstName,id,lastName,year,featured,homeHighSchool,message,html,css,js,node,react,socialMediaHandles,currentSkills}=user.user
 
-    // console.log(user)
+
+    
+    console.log(socialMediaHandles.gitHub)
     return (
         <div className="card" id={id} >
             <div className="ds-top"><h2 className="nameTop">{firstName} {lastName}</h2></div>
@@ -48,32 +50,47 @@ const profileCardWeb= (user) =>{
                 <h6>Skills <i className="fa fa-code" aria-hidden="true"></i></h6>
                 <div className="skill html">
                     <h6><FaHtml5/> HTML5 </h6>
-                    <div className="bar bar-html" style={{width:html}}>
-                        <p>95%</p>
+                    <div className="bar bar-html" style={{width:currentSkills.htmlSkill+'%', animate:([
+                        0%{width:0},
+                        100%{width:currentSkills.htmlSkill+'%'}
+                    ])}}>
+                        <p>{currentSkills.htmlSkill+'%'}</p>
                     </div>
                 </div>
                 <div className="skill css">
                     <h6><FaCss3/> CSS3 </h6>
-                    <div className="bar bar-css" style={{width:css}}>
-                        <p>90%</p>
+                    <div className="bar bar-css" style={{width:currentSkills.cssSkill+'%', animate:([
+                        0%{width:0},
+                        100%{width:currentSkills.cssSkill+'%'}
+                    ])}}>
+                        <p>{currentSkills.cssSkill+'%'}</p>
                     </div>
                 </div>
                 <div className="skill javascript">
                     <h6><SiJavascript/> JavaScript </h6>
-                    <div className="bar bar-js" style={{width:js}}>
-                        <p>75%</p>
+                    <div className="bar bar-js" style={{width:currentSkills.jsSkill+'%', animate:([
+                        0%{width:0},
+                        100%{width:currentSkills.jsSkill+'%'}
+                    ])}}>
+                        <p>{currentSkills.jsSkill+'%'}</p>
                     </div>
                 </div>
                 <div className="skill react">
                     <h6><FaReact/> React </h6>
-                    <div className="bar bar-react" style={{width:react}}>
-                        <p>75%</p>
+                    <div className="bar bar-react" style={{width:currentSkills.reactSkill+'%', animate:([
+                        0%{width:0},
+                        100%{width:currentSkills.reactSkill+'%'}
+                    ])}}>
+                        <p>{currentSkills.reactSkill+'%'}</p>
                     </div>
                 </div>
-                <div className="skill node" style={{width:node}}>
+                <div className="skill node" style={{width:currentSkills.nodeSkill+'%', animate:([
+                        0%{width:0},
+                        100%{width:currentSkills.nodeSkill}
+                    ])}}>
                     <h6><FaNode/> Node </h6>
                     <div className="bar bar-node">
-                        <p>75%</p>
+                        <p>{currentSkills.nodeSkill+'%'}</p>
                     </div>
                 </div>
                 </IconContext.Provider>

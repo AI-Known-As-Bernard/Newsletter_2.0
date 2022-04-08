@@ -3,7 +3,6 @@ div.container,
 div.main,
 div#main,
 div#container {
-  -webkit-transition: margin-left 0.5s;
   transition: margin-left 0.5s;
   position: fixed;
 }
@@ -18,7 +17,6 @@ div#container {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 3.75rem;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -28,7 +26,6 @@ div#container {
   font-size: 1.563rem;
   color: #818181;
   display: block;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -74,8 +71,7 @@ div#container {
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .socialIcons {
@@ -101,8 +97,7 @@ div#container {
   width: 24rem;
   height: 38rem;
   border-radius: 10px;
-  -webkit-box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
   background: #151515;
   overflow: hidden;
 }
@@ -115,8 +110,7 @@ div#container {
   width: 26.75rem;
   height: 10rem;
   background: #f7931d;
-  -webkit-animation: dsTop 1.5s;
-          animation: dsTop 1.5s;
+  animation: dsTop 1.5s;
 }
 .card .avatar-holder {
   position: absolute;
@@ -127,18 +121,15 @@ div#container {
   width: 12rem;
   height: 12rem;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000;
-          box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000;
+  box-shadow: 0 0 0 5px #151515, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000, inset 0 0 0 5px #000000;
   background: white;
   overflow: hidden;
-  -webkit-animation: mvTop 1.5s;
-          animation: mvTop 1.5s;
+  animation: mvTop 1.5s;
 }
 .card .avatar-holder img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card .nameTop {
   color: black;
@@ -159,8 +150,7 @@ div#container {
   width: inherit;
   height: 2.5rem;
   text-align: center;
-  -webkit-animation: fadeIn 2s ease-in;
-          animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 .card .name h1,
 .card .name h2,
@@ -188,15 +178,10 @@ div#container {
   width: 2.5rem;
 }
 .card .socialLinks {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-top: 0.5rem;
   width: 100%;
   border: none;
@@ -217,7 +202,6 @@ div#container {
 .card .socialLinks:hover,
 .card a:hover {
   font-size: 150%;
-  -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 .card .button {
@@ -231,8 +215,7 @@ div#container {
   width: inherit;
   height: 2.5rem;
   text-align: center;
-  -webkit-animation: fadeIn 2s ease-in;
-          animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-in;
   outline: none;
 }
 .card .button a {
@@ -242,7 +225,6 @@ div#container {
   letter-spacing: 0.05em;
   text-decoration: none;
   font-size: 0.625rem;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 .card .button a:hover {
@@ -258,12 +240,8 @@ div#container {
   left: 0;
   width: 100%;
   height: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 .card .ds-info .pens,
 .card .ds-info .projects,
@@ -273,10 +251,8 @@ div#container {
   width: 5.2083333333rem;
   text-align: center;
   color: white;
-  -webkit-animation: fadeInMove 2s;
-          animation: fadeInMove 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation: fadeInMove 2s;
+  animation-fill-mode: forwards;
 }
 .card .ds-info .pens h6,
 .card .ds-info .projects h6,
@@ -291,12 +267,10 @@ div#container {
   font-size: 0.9rem;
 }
 .card .ds-info .ds:nth-of-type(2) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .card .ds-info .ds:nth-of-type(1) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 .card .ds-skill {
   position: absolute;
@@ -307,8 +281,7 @@ div#container {
   left: 0;
   width: 90%;
   height: 18rem;
-  -webkit-animation: mvBottom 1.5s;
-          animation: mvBottom 1.5s;
+  animation: mvBottom 1.5s;
 }
 .card .ds-skill h6 {
   margin-bottom: 0.313rem;
@@ -329,6 +302,7 @@ div#container {
 }
 .card .ds-skill .skill .bar {
   height: 0.7rem;
+  padding-bottom: 0.2rem;
   border-radius: 20px;
   background: #f7931d;
   text-align: right;
@@ -338,52 +312,30 @@ div#container {
   font-size: 0.9rem;
   font-weight: 700;
   padding-top: 0.85rem;
-  -webkit-animation: fadeIn 4s;
-          animation: fadeIn 4s;
+  animation: fadeIn 4s;
 }
 .card .ds-skill .skill .bar:hover {
   background: white;
 }
 .card .ds-skill .skill .bar-html {
-  -webkit-animation: htmlSkill 1s;
-          animation: htmlSkill 1s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation: htmlSkill 1s;
+  animation-delay: 0.2s;
 }
 .card .ds-skill .skill .bar-css {
-  -webkit-animation: cssSkill 2s;
-          animation: cssSkill 2s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation: cssSkill 2s;
+  animation-delay: 0.2s;
 }
 .card .ds-skill .skill .bar-js {
-  -webkit-animation: jsSkill 3s;
-          animation: jsSkill 3s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation: jsSkill 3s;
+  animation-delay: 0.2s;
 }
 .card .ds-skill .skill .bar-react {
-  -webkit-animation: reactSkill 2s;
-          animation: reactSkill 2s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation: reactSkill 2s;
+  animation-delay: 0.2s;
 }
 .card .ds-skill .skill .bar-node {
-  -webkit-animation: nodeSkill 1s;
-          animation: nodeSkill 1s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-@-webkit-keyframes fadeInMove {
-  0% {
-    opacity: 0;
-    left: -18.75rem;
-  }
-  100% {
-    opacity: 1;
-    left: 0;
-  }
+  animation: nodeSkill 1s;
+  animation-delay: 0.2s;
 }
 
 @keyframes fadeInMove {
@@ -396,14 +348,6 @@ div#container {
     left: 0;
   }
 }
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -412,92 +356,29 @@ div#container {
     opacity: 1;
   }
 }
-@-webkit-keyframes htmlSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
 @keyframes htmlSkill {
   0% {
     width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@-webkit-keyframes cssSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
   }
 }
 @keyframes cssSkill {
   0% {
     width: 0;
   }
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes jsSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 75%;
-  }
 }
 @keyframes jsSkill {
   0% {
     width: 0;
-  }
-  100% {
-    width: 75%;
-  }
-}
-@-webkit-keyframes reactSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90%;
   }
 }
 @keyframes reactSkill {
   0% {
     width: 0;
   }
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes nodeSkill {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 95%;
-  }
 }
 @keyframes nodeSkill {
   0% {
     width: 0;
-  }
-  100% {
-    width: 95%;
-  }
-}
-@-webkit-keyframes mvBottom {
-  0% {
-    bottom: -9.375rem;
-  }
-  100% {
-    bottom: 0.625rem;
   }
 }
 @keyframes mvBottom {
@@ -508,28 +389,12 @@ div#container {
     bottom: 0.625rem;
   }
 }
-@-webkit-keyframes mvTop {
-  0% {
-    top: -9.375rem;
-  }
-  100% {
-    top: 4.5rem;
-  }
-}
 @keyframes mvTop {
   0% {
     top: -9.375rem;
   }
   100% {
     top: 4.5rem;
-  }
-}
-@-webkit-keyframes dsTop {
-  0% {
-    top: -9.375rem;
-  }
-  100% {
-    top: 0;
   }
 }
 @keyframes dsTop {
@@ -547,27 +412,22 @@ div#container {
 
 .image-gallery-icon {
   color: #fff;
-  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 0;
   cursor: pointer;
   outline: none;
   position: absolute;
   z-index: 4;
-  -webkit-filter: drop-shadow(0 2px 2px #1a1a1a);
-          filter: drop-shadow(0 2px 2px #1a1a1a);
+  filter: drop-shadow(0 2px 2px #1a1a1a);
 }
 @media (hover: hover) and (pointer: fine) {
   .image-gallery-icon:hover {
     color: #337ab7;
   }
   .image-gallery-icon:hover .image-gallery-svg {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 .image-gallery-icon:focus {
@@ -623,8 +483,7 @@ div#container {
 .image-gallery-right-nav {
   padding: 50px 0.625rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .image-gallery-left-nav .image-gallery-svg,
 .image-gallery-right-nav .image-gallery-svg {
@@ -682,16 +541,14 @@ div#container {
 }
 .image-gallery.fullscreen-modal .image-gallery-content {
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .image-gallery-content {
   position: relative;
   line-height: 0;
   top: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .image-gallery-content.fullscreen {
   background: #000;
@@ -739,8 +596,7 @@ div#container {
 }
 .image-gallery-slide .image-gallery-image {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .image-gallery-slide .image-gallery-description {
   background: rgba(0, 0, 0, 0.4);
@@ -775,20 +631,16 @@ div#container {
   text-align: center;
 }
 .image-gallery-bullets .image-gallery-bullet {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 2px #1a1a1a;
-          box-shadow: 0 2px 2px #1a1a1a;
+  box-shadow: 0 2px 2px #1a1a1a;
   cursor: pointer;
   display: inline-block;
   margin: 0 0.313rem;
   outline: none;
   padding: 0.313rem;
-  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 @media (max-width: 48rem) {
@@ -803,14 +655,12 @@ div#container {
   }
 }
 .image-gallery-bullets .image-gallery-bullet:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   background: #337ab7;
   border: 0.063rem solid #337ab7;
 }
 .image-gallery-bullets .image-gallery-bullet.active {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
   border: 0.063rem solid #fff;
   background: #fff;
 }
@@ -828,12 +678,10 @@ div#container {
   position: relative;
 }
 .image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal {
-  -ms-touch-action: pan-y;
-      touch-action: pan-y;
+  touch-action: pan-y;
 }
 .image-gallery-thumbnails-wrapper.thumbnails-swipe-vertical {
-  -ms-touch-action: pan-x;
-      touch-action: pan-x;
+  touch-action: pan-x;
 }
 .image-gallery-thumbnails-wrapper.thumbnails-wrapper-rtl {
   direction: rtl;
@@ -892,7 +740,6 @@ div#container {
 .image-gallery-thumbnail {
   display: inline-block;
   border: 4px solid transparent;
-  -webkit-transition: border 0.3s ease-out;
   transition: border 0.3s ease-out;
   width: 6.25rem;
   background: transparent;
@@ -938,8 +785,7 @@ div#container {
 }
 
 .image-gallery-thumbnail-label {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: white;
   font-size: 1em;
   left: 0;
@@ -948,8 +794,7 @@ div#container {
   position: absolute;
   top: 50%;
   text-shadow: 0 2px 2px #1a1a1a;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   white-space: normal;
   width: 100%;
 }
@@ -992,13 +837,8 @@ div#container {
 }
 
 .blogPost {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 80vw;
   margin: 0.5rem auto;
   left: calc(50% - 80vw);
@@ -1012,20 +852,13 @@ div#container {
   width: 100%;
   max-height: 50rem;
   display: inherit;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 1rem;
   font-size: 1.5rem;
   background-color: #f7931d;
   display: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 2px solid white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -1055,8 +888,7 @@ div#container {
 
 .blogPostContainer:before {
   background-color: transparent;
-  -webkit-filter: blur(30px);
-          filter: blur(30px);
+  filter: blur(30px);
 }
 
 .blogPostContainer {
