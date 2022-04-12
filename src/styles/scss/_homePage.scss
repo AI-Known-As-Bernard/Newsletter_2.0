@@ -1,13 +1,12 @@
-
 .cardGalleryContainer {
   width: 80%;
   height: 100%;
   //   object-fit: contain;
 }
-.next{
+.next {
   position: absolute;
   top: 50%;
-  right:13.5%;
+  right: 13.5%;
   background-color: #f7931d;
   border: none;
   color: white;
@@ -15,64 +14,70 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 3rem;
+  border-radius: 25px;
 }
-.previous{
+.previous {
   position: absolute;
   top: 50%;
-  left:10%;
-  background-color:#f7931d;
+  left: 10%;
+  background-color: #f7931d;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 3rem;
+  border-radius: 25px;
 }
 
-@media (max-width: 768px){
-  .pageTitle{
-    font-size:1.7rem;
+@media (max-width: 768px) {
+  .card {
+    width: 22rem;
+  }
+  .pageTitle {
+    font-size: 1.7rem;
     position: absolute;
-    width:70%;
+    width: 70%;
     text-align: center;
     left: 30%;
     top: 0;
     z-index: 45;
-
   }
-  .postGallery{
+  .postGallery {
     top: 3rem;
   }
-  .next{
-    position: absolute;
+  .next {
+    position: relative;
     display: flex;
-    right: 0.5rem;
+    left: 80%;
     background-color: black;
-    top: 10rem;
+    top: 12rem;
     z-index: 45;
-    width:5%;
+    width: 5%;
     height: 5%;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 2rem;
+    border-radius: 25px;
   }
-  .previous{
-    position: absolute;
+  .previous {
+    position: relative;
+    border-radius: 25px;
     display: flex;
     left: 0.5rem;
     background-color: black;
-    top: 10rem;
+    top: 7.5rem;
     z-index: 45;
-    width:5%;
+    width: 5%;
     height: 5%;
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 16px;}
+    font-size: 2rem;
   }
-
+}

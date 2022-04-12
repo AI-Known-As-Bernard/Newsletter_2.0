@@ -5,28 +5,14 @@ import { IconContext } from "react-icons";
 
 
 const profileCardWeb= (user) =>{
-    // const user={
-    //  firstName: 'James' ,
-    //  lastName: ' Kirk',
-    //  year:2,
-    //  featured:true,
-    //  homeHighSchool:'Starfleet',
-    //  message:'How we deal with death is at least as important as how we deal with life.',
-    //  gitHub:'https://github.com/Jblack262',
-    //  html:'95%',
-    //  css:'90%',
-    //  js:'75%',
-    //  react:'95%',
-    //  node:'90%'
-    // }
-
     const {firstName,id,lastName,year,featured,homeHighSchool,message,html,css,js,node,react,socialMediaHandles,currentSkills}=user.user
-
-    const skillRenderCheck = (currentSkills) =>{
-        
-    }
     
-    console.log(socialMediaHandles.gitHub)
+     const emptyZero = (skillPts) =>{
+         console.log(skillPts)
+         if(skillPts==0){return ''}
+         else{return skillPts+"%"}
+     }
+    console.log(currentSkills)
     return (
         <div className="card" id={id} >
             <div className="ds-top"><h2 className="nameTop">{firstName} {lastName}</h2></div>
@@ -56,7 +42,7 @@ const profileCardWeb= (user) =>{
                         0%{width:0},
                         100%{width:currentSkills.htmlSkill+'%'}
                     ])}}>
-                        <p>{currentSkills.htmlSkill+'%'}</p>
+                        <p>{emptyZero(currentSkills.htmlSkill)}</p>
                     </div>
                 </div>
                 <div className="skill css">
@@ -65,7 +51,7 @@ const profileCardWeb= (user) =>{
                         0%{width:0},
                         100%{width:currentSkills.cssSkill+'%'}
                     ])}}>
-                        <p>{currentSkills.cssSkill+'%'}</p>
+                        <p>{emptyZero(currentSkills.cssSkill)}</p>
                     </div>
                 </div>
                 <div className="skill javascript">
@@ -74,7 +60,7 @@ const profileCardWeb= (user) =>{
                         0%{width:0},
                         100%{width:currentSkills.jsSkill+'%'}
                     ])}}>
-                        <p>{currentSkills.jsSkill+'%'}</p>
+                        <p>{emptyZero(currentSkills.jsSkill)}</p>
                     </div>
                 </div>
                 <div className="skill react">
@@ -83,7 +69,7 @@ const profileCardWeb= (user) =>{
                         0%{width:0},
                         100%{width:currentSkills.reactSkill+'%'}
                     ])}}>
-                        <p>{currentSkills.reactSkill+'%'}</p>
+                        <p>{emptyZero(currentSkills.reactSkill)}</p>
                     </div>
                 </div>
                 <div className="skill node" style={{width:currentSkills.nodeSkill+'%', animate:([
@@ -92,7 +78,7 @@ const profileCardWeb= (user) =>{
                     ])}}>
                     <h6><FaNode/> Node </h6>
                     <div className="bar bar-node">
-                        <p>{currentSkills.nodeSkill+'%'}</p>
+                        <p>{emptyZero(currentSkills.nodeSkill)}</p>
                     </div>
                 </div>
                 </IconContext.Provider>

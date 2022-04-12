@@ -2,7 +2,7 @@
 
 $cardWidth: 24rem;
 $cardHeight: 38rem;
-$titleSize:2.5rem;
+$titleSize: 2.5rem;
 $categorySize: 1rem;
 $avatar: 12rem;
 $progressBarSize: 0.7rem;
@@ -59,7 +59,7 @@ $nodeBar: 95%;
     margin: auto;
     top: 4rem;
     right: 0;
-    left: -.5rem;
+    left: -0.5rem;
     width: $avatar;
     height: $avatar;
     border-radius: 50%;
@@ -118,8 +118,7 @@ $nodeBar: 95%;
       width: 29%;
       word-wrap: break-word;
       font-size: 1.2rem;
-      margin-bottom: .5rem;
-      
+      margin-bottom: 0.5rem;
     }
     h6 {
       position: absolute;
@@ -227,7 +226,7 @@ $nodeBar: 95%;
   .ds-skill {
     position: absolute;
     margin: auto;
-    top: 18.5rem;
+    top: 21rem;
     bottom: 0.625rem;
     right: 0;
     left: 0;

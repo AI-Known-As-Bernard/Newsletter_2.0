@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "month": "August",
+    "year": "2021",
+    "title": "Welcome West-Mec Coding",
+    "content": "Hello parents and students website and blog will be used to keep you and the students connected and showcase what they are capable of. Each Month I will be updating student quotes and information to keep everyone in the loop"
+  },
+  {
+    "id": 2,
+    "month": "September",
+    "year": "2021",
+    "title": "Coding Students at work",
+    "content": "Year 2 students are taking their time with their summer amnesia but JS review is going well. Year 1 students are learning webdesign and JS basics and doing GREAT!!!"
+  },
+  {
+    "id": 3,
+    "month": "October",
+    "year": "2021",
+
+    "title": "October Successes",
+    "content": "This Tech-tober has been an AMAZING Success for West-MEC NEC Coding. Alexander Welton's Designs for T-Shirts/Hoodies/Backpacks were so amazing we have over $300 is re-orders. We also complete our first of many comminity service events at St. Mary's Food Bank"
+  },
+  {
+    "id": 4,
+    "month": "November",
+    "year": "2021",
+    "title": "Coding + Safety",
+    "content": "Students will be putting on an Internet Safety Event on November 13th Parents, Students and Friends are welcome."
+  },
+  {
+    "id": 5,
+    "month": "December",
+    "year": "2021",
+    "title": "Coding to All Ages",
+    "content": "Future Coding students visted our program to take a look at what our Program had to offer and our students were great \n Please check out our students new work"
+  },
+  {
+    "id": 6,
+    "month": "January",
+    "year": "2022",
+    "title": "New Years 2022-Coding Giving Back",
+    "content": "The Students visited to St. Mary Food Bank to give back to the community and start the NEW YEAR of right!!!"
+  },
+  {
+    "id": 7,
+    "month": "Febuary",
+    "year": "2022",
+    "title": "New Years 2022-Coding Giving Back",
+    "content": "The Students visited to St. Mary Food Bank to give back to the community and start the NEW YEAR of right!!!"
+  },
+  {
+    "id": 8,
+    "month": "March",
+    "year": "2022",
+    "title": "New Years 2022-Coding Giving Back",
+    "content": "The Students visited to St. Mary Food Bank to give back to the community and start the NEW YEAR of right!!!"
+  },
+  {
+    "id": 9,
+    "month": "April",
+    "year": "2022",
+    "title": "New Years 2022-Coding Giving Back",
+    "content": "The Students visited to St. Mary Food Bank to give back to the community and start the NEW YEAR of right!!!"
+  }
+
+]
