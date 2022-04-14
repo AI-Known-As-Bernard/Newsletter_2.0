@@ -917,6 +917,7 @@ div#container {
 .cardGalleryContainer {
   width: 80%;
   height: 100%;
+  position: relative;
 }
 
 .next {
