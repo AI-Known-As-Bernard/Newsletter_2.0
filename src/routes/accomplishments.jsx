@@ -1,4 +1,5 @@
 import '../styles/css/main.css';
+import Award from '../components/elements/award.jsx'
 
 
 const Accomplishments = ()=> {
@@ -7,10 +8,8 @@ const Accomplishments = ()=> {
     return(
         <div id='main' className='accomplishments'>
           <h1 className='pageTitle'>Accomplishments</h1>
-               
-           
-        </div>
-        
+               <Award/>
+        </div>  
     )
 }
 

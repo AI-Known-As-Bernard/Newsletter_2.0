@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './routes/home';
 import Blog from './routes/blog';
@@ -9,8 +9,9 @@ import SlideNavBar from './components/elements/slideNavBar.jsx';
 import connectDB from './components/elements/connectDB';
 // import App from './app'
 
-
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
     {/* <App/> */}
     <BrowserRouter>
@@ -30,9 +31,7 @@ ReactDOM.render(
         />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
 
-///Thus tht change has been made
